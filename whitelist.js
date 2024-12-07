@@ -2,6 +2,7 @@
 const whitelist = {
     "big@dong.com": "dong123",
     "big@balls.com": "balls123"
+    "big@sheis.com": "sheis123"
 };
 
 // DOM Elements
