@@ -1,7 +1,7 @@
 // Whitelist of allowed users (email: password)
 const whitelist = {
-    "my@balls.com": "myballs",
-    "my@dong.com": "mydong"
+    "allowed_email@example.com": "password123",
+    "user2@example.com": "mypassword456"
 };
 
 // DOM Elements
@@ -12,14 +12,15 @@ const errorMessage = document.getElementById("error-message");
 
 // Handle Login Form Submission
 loginForm.addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent form from refreshing the page
+    // Prevent default form submission
+    event.preventDefault();
 
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
 
     // Check credentials against whitelist
     if (whitelist[email] === password) {
-        // Hide login form and display the game content
+        // Hide login form and display game content
         loginContainer.style.display = "none";
         gameContainer.style.display = "block";
     } else {
