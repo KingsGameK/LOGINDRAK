@@ -31,7 +31,7 @@
     <script>
         // Function to load external HTML content
         function loadGameContent() {
-            fetch("game-content.html")
+            fetch("https://kingsgamek.github.io/LOGINZEHA/game-content.html")
                 .then(response => response.text())  // Parse the HTML content
                 .then(data => {
                     document.getElementById("dynamic-content").innerHTML = data;
