@@ -1,7 +1,7 @@
 // Whitelist of allowed users (email: password)
 const whitelist = {
-    "allowed_email@example.com": "password123",
-    "user2@example.com": "mypassword456"
+    "big@dong.com": "dong123",
+    "big@balls.com": "balls123"
 };
 
 // DOM Elements
