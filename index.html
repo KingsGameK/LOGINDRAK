@@ -9,7 +9,7 @@
     <!-- Login Form -->
     <div id="login-container">
         <h2>Login</h2>
-        <form id="login-form">
+        <form id="login-form" onsubmit="return false;">
             <label for="email">Email:</label>
             <input type="email" id="email" required>
             <br>
@@ -25,28 +25,8 @@
     <div id="game-container" style="display: none;">
         <h1>Welcome to the Game</h1>
         <p>Your game content goes here!</p>
-        <!-- Example game progress -->
-        <p id="progress">Progress: 0%</p>
-        <button onclick="updateProgress()">Increase Progress</button>
     </div>
 
     <script src="whitelist.js"></script>
-    <script>
-        // Function to update game progress
-        function updateProgress() {
-            let progress = parseInt(localStorage.getItem("gameProgress") || "0", 10);
-            progress += 10;
-            localStorage.setItem("gameProgress", progress);
-            document.getElementById("progress").innerText = `Progress: ${progress}%`;
-        }
-
-        // Load game progress from local storage on start
-        window.onload = () => {
-            const savedProgress = localStorage.getItem("gameProgress");
-            if (savedProgress) {
-                document.getElementById("progress").innerText = `Progress: ${savedProgress}%`;
-            }
-        };
-    </script>
 </body>
 </html>
