@@ -2,8 +2,8 @@ console.log("Whitelist script loaded"); // Check if the script loads
 
 // Whitelist of allowed users (email: password)
 const whitelist = {
-    "allowed_email@example.com": "password123",
-    "user2@example.com": "mypassword456"
+    "dante@fiopy.com": "order",
+    "karim@albi.com": "chaos"
 };
 
 // DOM Elements
